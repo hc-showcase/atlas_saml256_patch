@@ -1,4 +1,3 @@
-  [mkaesz@tfe ~]$ cat atlas-patch/devise_saml_authenticatable.rb
 # ==> Configuration for :saml_authenticatable
 #
 # We run this as an #after_initialize block because we will rely on Vault to
