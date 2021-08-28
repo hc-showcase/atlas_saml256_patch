@@ -65,7 +65,7 @@ Atlas::Application.config.after_initialize do
       settings.issuer        = "#{Settings.basic.pretty_url}/users/saml/metadata"
       settings.authn_context = nil
       settings.security[:signature_method] = XMLSecurity::Document::RSA_SHA256
-
+      settings.security[:digest_method]    = XMLSecurity::Document::SHA256
 
       # The IdP URL that TFE will send logout requests to
       # Example:
